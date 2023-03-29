@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/router";
 
-function signup() {
+function Signup() {
   const { user, signup } = useAuth();
   //   console.log(user);
   const router = useRouter();
@@ -71,4 +71,4 @@ function signup() {
   );
 }
 
-export default signup;
+export default Signup;

@@ -10,7 +10,7 @@ function ProtectedRoute({ children }) {
     if (!user) {
       router.push("/signin");
     }
-  }, [user]);
+  }, [router, user]);
   // if error in useEffect, add router as dependency.
 
   return <>{user ? children : null}</>;

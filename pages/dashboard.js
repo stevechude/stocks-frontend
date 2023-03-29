@@ -1,36 +1,6 @@
 import Format from "@/layout/format";
 import axios from "axios";
 
-const markets = [
-  {
-    market_type: "Equity",
-    region: "United States",
-    primary_exchanges: "NASDAQ, NYSE, AMEX, BATS",
-    local_open: "09:30",
-    local_close: "16:00",
-    current_status: "closed",
-    notes: "",
-  },
-  {
-    market_type: "Equity",
-    region: "Canada",
-    primary_exchanges: "Toronto, Toronto Ventures",
-    local_open: "09:30",
-    local_close: "16:00",
-    current_status: "closed",
-    notes: "",
-  },
-  {
-    market_type: "Equity",
-    region: "United Kingdom",
-    primary_exchanges: "London",
-    local_open: "08:00",
-    local_close: "16:30",
-    current_status: "open",
-    notes: "",
-  },
-];
-
 export async function getServerSideProps() {
   const api_key = "ZRPJXUN7H1K83QBY";
 
